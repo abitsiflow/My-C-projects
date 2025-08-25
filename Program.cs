@@ -1,30 +1,33 @@
-namespace ConsoleApp5
+﻿namespace secondProgram
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int age = 10;
-            String fname = "John";
-            String lname = "Doe";
+            int x = 10;
+            int y = Convert.ToInt32(x);
+            Console.WriteLine(y.GetType());
 
-            Console.Write("HELLO NEIGHBORHOOD!!!!!!!!!!");
-            Console.Write("");
-            Console.WriteLine("Hello, World!");
-            Console.WriteLine("I am " + fname + " " + lname);
-            Console.WriteLine("I am " + age + " years old!");
+            double c = 3.14;
+            double d = Convert.ToDouble(c);
+            Console.WriteLine(d.GetType());
+
+            String name = "John Doe";
+            String user = Convert.ToString(name);
+            Console.WriteLine(user);
+
+            String g = "#";
+            char h = Convert.ToChar(g);
+            Console.WriteLine(h.GetType());
+
+            String m = "false";
+            bool n = Convert.ToBoolean(m);
+            Console.WriteLine(n.GetType());
             Console.Beep();
 
-            //this is a comment
-            /*
-             * This is a multi line comment
-             * 
-             * 
-             */
-
-            Console.WriteLine("Hello \n \bWorld!!");
-
-            Console.ReadKey();// this method preventing to end the program until the user enter a key to end the program
+            String s = "true";
+            bool t = Convert.ToBoolean(s);
+            Console.WriteLine(t.GetType());
         }
     }
 }
