@@ -1,33 +1,58 @@
-﻿namespace secondProgram
+﻿namespace ConsoleApp1
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int x = 10;
-            int y = Convert.ToInt32(x);
-            Console.WriteLine(y.GetType());
+           
+                String fname;
+                String lname;
+                int age;
 
-            double c = 3.14;
-            double d = Convert.ToDouble(c);
-            Console.WriteLine(d.GetType());
+                Console.Write("Enter your first name: ");
+                fname = Convert.ToString(Console.ReadLine());
 
-            String name = "John Doe";
-            String user = Convert.ToString(name);
-            Console.WriteLine(user);
+                Console.Write("Enter your last name: ");
+                lname = Convert.ToString(Console.ReadLine());
 
-            String g = "#";
-            char h = Convert.ToChar(g);
-            Console.WriteLine(h.GetType());
+                Console.Write("How old are you? : ");
+                age = Convert.ToInt32(Console.ReadLine());
 
-            String m = "false";
-            bool n = Convert.ToBoolean(m);
-            Console.WriteLine(n.GetType());
+
+                Console.WriteLine("First Name: " + fname);
+                Console.WriteLine("Last Name: " + lname);
+                Console.WriteLine("Age: " + age);
+                Console.WriteLine("*****************");
+                Console.WriteLine("Age Description");
+
+            if (age >= 50)
+            {
+            Console.WriteLine("You are a senior");
+            }
+            else if (age >= 40)
+            {
+                Console.WriteLine("You are almost at middle age");
+            }
+            else if (age >= 30)
+            {
+                Console.WriteLine("You probably have kids");
+            }
+            else if (age >= 20)
+            {
+                Console.WriteLine("You are probably working student or sophomore college student");
+            }
+            else if (age >= 18)
+            {
+                Console.WriteLine("You are an adult");
+            }
+            else
+            {
+                Console.WriteLine("You are young");
+            }
+
             Console.Beep();
-
-            String s = "true";
-            bool t = Convert.ToBoolean(s);
-            Console.WriteLine(t.GetType());
-        }
+            Console.WriteLine("Press any key to exit");
+            Console.ReadKey();
+}
     }
 }
